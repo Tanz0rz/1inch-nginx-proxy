@@ -1,6 +1,6 @@
 # 1inch Nginx Proxy
 
-This repository contains a simple setup to run an Nginx proxy locally to properly proxy all requests to the 1inch API.
+This is a simple Nginx proxy for the 1inch API that can be deployed locally.
 
 # Why use a proxy with the 1inch API?
 
