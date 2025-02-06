@@ -13,11 +13,11 @@ Non-proxied 1inch API requests from a web browser will always throw a CORS error
 # Setup
 
 1. Clone this repository to the machine that will be running the proxy.
-2. in `./nginx.conf`, replace `replace_with_your_dev_portal_token` with your Dev Portal API key.
+2. in `nginx.conf`, replace `replace_with_your_dev_portal_token` with your Dev Portal API key.
 3. Run `docker-compose up` in the root of the repository.
 
 Now you have an nginx proxy running locally to properly handle all 1inch API requests
 
-The beginning of all request strings to the 1inch APIs should now be changed from `https://api.1inch.dev/` to `http://localhost:8888/`
+The beginning of all request strings to the 1inch APIs should now be changed from `https://api.1inch.dev/` to `http://localhost:8888/` (including the switch from https to http)
 
 **NOTE:** Requests to the nginx proxy should always use http and **not** https. The conversion to https will be handled by nginx automatically
